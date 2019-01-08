@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C语言</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+     <link rel="icon" href="11/c-icon.jpg"type="img/x-ico" />
+</head>
+<body>
+    <div class="header">
+    
+        <div id="header_Title">
+            <a href="#">C语言</a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li> <a href="#">首页</a></li>
+                <li> <a href="#">联系</a></li>
+                <li> <a href="#">订阅</a></li>
+                <li> <a href="#">关于</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div  class="menu">
+    <h2>c语言</h2>
+    <ul >
+<li>C<a href="index.html">语言基础</a></li>
+<li><a href="2.html">C语言变量和常量</a></li>
+<li><a href="3.html">数据类型</a></li>
+<li><a href="4.html">运算符及表达式</a></li>
+<li><a href="5.html">顺序与选择结构</a></li>
+<li><a href="6.html">循环结构</a></li>
+<li><a href="7.html">函数</a></li>
+<li><a href="8.html">数组与指针</a></li>
+
+    </ul>
+    </div>
+    
+    
+    
+<div class="main">
+        <div class="post_Title">
+            
+    c语言基础</div>
+        <div class="clear"></div>
+        <hr width="100%" size="1">
+      <div class="post_Content">
+        <h2>c语言介绍</h2>
+            <p>语言是一种通用的、面向过程式的计算机程序设计语言。1972 年，为了移植与开发 UNIX 操作系统，丹尼斯·里奇在贝尔电话实验室设计开发了 C 语言。</p>
+
+<p>C 语言是一种广泛使用的计算机语言，它与 Java 编程语言一样普及，二者在现代软件程序员之间都得到广泛使用。
+
+当前最新的C语言标准为 C11 ，在它之前的C语言标准为 C99。</p> 
+         <img src="11/1-1.jpg" width="34%" height="211" >
+         <hr>
+         <h2>c语言基本常识</h2>
+        <p> 1、任何一个c语言程序都必须包括以下格式：main() { }
+这是c语言的基本结构，任何一个程序都必须包含这个结构。括号内可以不写任何内容，那么该程序将不执行任何结果。
+</p>
+<p>2、main()----在c语言中称之为“主函数”，一个c程序有且仅有一个main函数，任何一个c程序总是从main函数开始执行，main函数后面的一对圆括号不能省略。</p>
+
+<p>3、被大括号{ }括起来的内容称为main函数的函数体，这部分内容就是计算机要执行的内容。</p>
+
+<p>4、在{ }里面每一句话后面都有一个分号（；），在c语言中，我们把以一个分号结尾的一句话叫做一个c语言的语句，分号是语句结束的标志。</p>
+
+<p>5、#include
+
+注意：（1）以#号开头 （2)不以分号结尾 这一行没有分号，所以不是语句，在c语言中称之为命令行，或者叫做“预编译处理命令”。</p>
+
+<p>7、程序中以 /*开头并且以*/结尾的部分表示程序的注释部分，注释可以添加在程序的任何位置，为了提高程序的可读性而添加，但计算机在执行主函数内容时完全忽略注释部分，换而言之就是计算机当做注释部分不存在于主函数中。</p>
+<hr>
+<h2>标识符</h2>
+<P>在编写程序时，必须为函数、变量等命名，这个名字称为标识符。C语言中标识符的命名规则如下：</P>
+
+<P>标识符只能由字母、数字、下划线组成；</P>
+
+<P>标识符的第一个字母必须是字母和下划线；</P>
+
+<P>标识符区分大小写字母，如If和if是两个完全不同的标识符。</P>
+
+<P>合法标识符如下： A6, b_3 , _mn 非法的标识符如下： ab#12 , 8m , tr3:4 , yes no</P>
+
+<P>标识符不能与程序中具有特殊意义的关键字相同，不能与用户编制的函数名、C语言库函数相同，在程序中各种标识符尽量不要重复，以便区分。选择变量名和其他标识符时，应注意做到 “见名知义”。</P>
+<img src="11/1-2.jpg" width=31% height="25%">
+<P>标识符分为如下三类：</P>
+
+<P>1、关键字</P>
+<P>关键字是具有特定含义的，专门用来说明c语言特定成分的一类标识符，不能用作用户的标识符。</P>
+<table  border="1"  bordercolor="#333333" rules="all"   >
+            
+              <tr>
+                <th>关键字</th>
+                <th>描述</th>
+                <th>关键字</th>
+                <th>描述</th>
+              </tr>
+              <tr>
+                <td>char</td>
+                <td>声明字符型变量或函数 </td>
+                <td>int</td>
+                <td>声明整型变量或函数 </td>
+              </tr>
+              <tr>
+              <td> double </td>
+                <td>声明双精度变量或函数</td>
+                <td>long</td>
+                <td>声明长整型变量或函数</td>
+              </tr>
+              <tr>
+              <td>enum </td>
+                <td>声明枚举类型 </td>
+                <td>short</td>
+                <td>声明短整型变量或函数 </td>
+              </tr>
+              <tr><td>float</td>
+                <td>声明浮点型变量或函数</td>
+                <td>signed</td>
+                <td>声明有符号类型变量或函数 </td>
+              </tr>
+              <tr><td>struct</td>
+                <td>声明结构体变量或函数</td>
+                <td>void </td>
+                <td> 声明函数无返回值或无参数</td>
+              </tr>
+              <td>union</td>
+                <td>声明共用体（联合）数据类型</td>
+                <td>unsigned</td>
+                <td>声明无符号类型变量或函数</td>
+              </tr>
+            
+          </table>
+
+<P>2、预定义标识符</P>
+
+
+<P>预定义标识符在c语言中也有特定的含义，但可以用作用户标识符，预定义标识符分为两类：</P>
+
+<P>（1）、库函数名字，比如（printf，scanf,sin，isdigit等）</P>
+<P> （2）、编译处理命令名，比如（define,include）</P>
+
+<P>3、用户标识符</P>
+
+<P>用户根据需要自己定义的标识符称为用户标识符。无论如何自定义标识符，都必须符合标识符的三条命名规则。</P>
+           
+        </div>
+        <div class="footer">
+            分类：C语言
+            <br>
+            <br><br>
+            <li><a href="2.html">下一篇：变量和常量</a></li>
+        </div>
+    </div>
+    
+</body>
+</html>
